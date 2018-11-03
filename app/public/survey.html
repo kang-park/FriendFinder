@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <title>
+            Friend Finder Survey
+        </title>
+    </head>
+
+    <body>
+        <div class='container'>
+            <div class='card panel blue lighten-4 col s12 center align'>
+                <h4><strong>
+                    Survey Questions
+                </strong></h4>
+
+                <div class='card-panel left-align white'>
+
+                    <!-- Personal Information -->
+                    <h5>
+                        Tell Us About Yourself
+                    </h5>
+    
+                    <input id='name' type='text'>
+                    <label class='active' for="name">Name (Required)</label>
+                    <input id='photo' type='text'>
+                    <label class='active' for="name">Link to Photo (Required)</label>
+                    <br><br>
+
+                    <!-- Survey Questions -->
+                    <h5><strong>Question 1</strong></h5>
+                    <p>I love dogs.</p>
+                    <select data-placeholder="" class="browser-default" class="q1">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 2</strong></h5>
+                    <p>I like to try new kinds of cuisin.</p>
+                    <select data-placeholder="" class="browser-default" class="q2">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 3</strong></h5>
+                    <p>I like to travel.</p>
+                    <select data-placeholder="" class="browser-default" class="q3">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 4</strong></h5>
+                    <p>Sometimes I just like to be alone.</p>
+                    <select data-placeholder="" class="browser-default" class="q4">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 5</strong></h5>
+                    <p>I work out on a regular basis.</p>
+                    <select data-placeholder="" class="browser-default" class="q5">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 6</strong></h5>
+                    <p>I like going to the movie theaters.</p>
+                    <select data-placeholder="" class="browser-default" class="q6">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 7</strong></h5>
+                    <p>I am an outgoing/extroverted person.</p>
+                    <select data-placeholder="" class="browser-default" class="q7">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 8</strong></h5>
+                    <p>I am close to my family.</p>
+                    <select data-placeholder="" class="browser-default" class="q8">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 9</strong></h5>
+                    <p>I am more logical than emotional.</p>
+                    <select data-placeholder="" class="browser-default" class="q9">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+
+                    <h5><strong>Question 10</strong></h5>
+                    <p>I am up for any adventure.</p>
+                    <select data-placeholder="" class="browser-default" class="q10">
+                        <option value="">Choose an option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strong Agree)</option>
+                    </select>
+                    <br>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" data-target="modal" class="waves effect waves-light btn blue lighten-4" id="submitButton"><span class='black-text'>Submit</span></button>
+
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class='links'>
+                    <p>
+                        <a href='/api/friends'>
+                            API Friends
+                        </a> | 
+                        <a href='https://github.com/kang-park/FriendFinder' target='github'>
+                            GitHub Repo
+                        </a>
+                    </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal">
+                <div class="modalContent">
+                    <h4>Meet Your Match</h4>
+                    <h5 class="matchName"></h5>
+                    <img class="matchPicture" src="" width=275px>
+                </div>
+                <div class="doneButton">
+                    <a href="" class="modal-action modal-close">Done</a>
+                </div>
+            </div>
+        </div>
+    </body>
