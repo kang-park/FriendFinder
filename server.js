@@ -5,7 +5,7 @@ let path = require("path");
 
 //Set up Express to parse data
 let app = express();
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

@@ -164,7 +164,7 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal">
+            <div class="modalContainer">
                 <div class="modalContent">
                     <h4>Meet Your Match</h4>
                     <h5 class="matchName"></h5>
@@ -175,4 +175,24 @@
                 </div>
             </div>
         </div>
+
+        <!-- Send information to server -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#submitButton").on("click", function(){
+                event.preventDefault();
+                let newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    preferences: [$(".question1").val(), $(".question2").val(), $(".question3").val(), $(".question4").val(), $(".question5").val(), $(".question6").val(), $(".question7").val(), $(".question8").val(), $(".question9").val(), $(".question10").val()]
+                };
+
+                $.post("/api/friends", newFriend)
+                .done(function(data) {
+                    $(".match-name").text(data.name);
+                    $(".match-image").attr("src", data.photo);
+                });
+            });
+        })
+        </script>
     </body>
